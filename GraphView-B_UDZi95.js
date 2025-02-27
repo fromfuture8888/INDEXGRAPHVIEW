@@ -2477,13 +2477,13 @@ const CORE_SETTINGS = [
   {
     id: "Comfy.UseNewMenu",
     category: ["Comfy", "Menu", "UseNewMenu"],
-    defaultValue: "Top",
+    defaultValue: "Disabled",
     name: "Use new menu",
     type: "combo",
     options: ["Disabled", "Top", "Bottom"],
     migrateDeprecatedValue: /* @__PURE__ */ __name((value) => {
       if (value === "Floating") {
-        return "Top";
+        return "Disabled";
       }
       return value;
     }, "migrateDeprecatedValue")
