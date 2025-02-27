@@ -2356,7 +2356,7 @@ const CORE_SETTINGS = [
       { value: "ko", text: "한국어" },
       { value: "fr", text: "Français" }
     ],
-    defaultValue: /* @__PURE__ */ __name(() => navigator.language.split("-")[0] || "en", "defaultValue")
+    defaultValue: "en"
   },
   {
     id: "Comfy.NodeBadge.NodeSourceBadgeMode",
@@ -2466,7 +2466,7 @@ const CORE_SETTINGS = [
     id: "Comfy.DevMode",
     name: "Enable dev mode options (API save, etc.)",
     type: "boolean",
-    defaultValue: false,
+    defaultValue: true,
     onChange: /* @__PURE__ */ __name((value) => {
       const element = document.getElementById("comfy-dev-save-api-button");
       if (element) {
